@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kő-Papír-Olló</title>
+    <link rel="icon" href="./media/images/qwak.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>Kő - papír - olló játék</h1>
+            <img src="./media/images/RSP.svg" alt="Kő-Papír-Olló" class="rsp-logo">
+            <div class="points">
+                <div><span>Számítógép: </span><span class="c_point">0</span></div>
+                <div><span>Játékos: </span><span class="p_point">0</span></div>
+            </div>
+            <button class="button" onclick="game.reset()">Új játék !</button>
+        </div>
+            <div class="item2">
+                <span>A számítógép választása:</span>
+                <div class="c_icons">
+                    <img src="./media/images/rock.svg" alt="Kő" title="Kő" class="icons" id="c_rock_icon">
+                    <img src="./media/images/paper.svg" alt="Papír" title="Papír" class="icons" id="c_paper_icon">
+                    <img src="./media/images/scisor.svg" alt="Olló" title="Olló" class="icons" id="c_scisor_icon">
+                </div>
+            </div>
+            <div class="item3">
+                <span class="result"></span>
+                <span>A játékos választása: </span>
+                <div class="p_icons">
+                    <div onclick="game.calc(`rock`)"><img src="./media/images/rock.svg" alt="Kő" title="Kő" class="icons" id="p_rock_icon"></div>
+                    <div onclick="game.calc(`paper`)"><img src="./media/images/paper.svg" alt="Papír" title="Papír" class="icons" id="p_paper_icon"></div>
+                    <div onclick="game.calc(`scisor`)"><img src="./media/images/scisor.svg" alt="Olló" title="Olló" class="icons" id="p_scisor_icon"></div>
+                </div>
+                <span>Válassz a fenti ikonokra kattintva !</span>
+            </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
